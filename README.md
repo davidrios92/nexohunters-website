@@ -6,14 +6,22 @@ Static, dependency-free implementation of the **Nexo Hunters Landing** Claude De
 Bilingual one-pager for a recruiting-process automation consultancy — Spanish (es-LA) is the
 primary version, English (en) is a full translation.
 
-## Run
+## Live
+
+- Spanish: <https://nexohunters-website.vercel.app/>
+- English: <https://nexohunters-website.vercel.app/en/>
+
+Deployed on Vercel (project `nexohunters-website`, team *Emanuel Rios' projects*), linked to
+this GitHub repo. **`main` is the production branch — every push to `main` deploys straight
+to production.** There is no build step; Vercel just serves the files.
+
+## Run locally
 
 ```bash
 py -3 -m http.server 8080 --directory "C:/dev/nexo hunters"
 ```
 
 Spanish at <http://127.0.0.1:8080/>, English at <http://127.0.0.1:8080/en/>.
-There is no build step — plain HTML, CSS and one small JS file.
 
 ## Layout
 
@@ -101,7 +109,7 @@ project and drop them into `assets/img/` — no code changes needed.
 | Where | Current value | Needs |
 |---|---|---|
 | Privacy policy link | `#privacidad` (es) / `#privacy` (en) | a real page — these anchors currently resolve to nothing |
-| `canonical`, `hreflang`, `og:url`, `og:image` | `https://nexohunters.com/…` | confirm the production domain and update if it differs |
+| `canonical`, `hreflang`, `og:url`, `og:image` | `https://nexohunters.com/…` | **these currently point at a domain that is not the live one.** Either attach `nexohunters.com` to the Vercel project, or change them to the `.vercel.app` host — until then, search engines and link previews are pointed at the wrong place |
 | "Agendar una reunión" / "Book a meeting" | `mailto:info@nexohunters.com` | a scheduling link, if one exists |
 
 Contact details in use: **info@nexohunters.com** and WhatsApp **+54 9 11 3209 6054**
