@@ -109,8 +109,22 @@ project and drop them into `assets/img/` — no code changes needed.
 | Where | Current value | Needs |
 |---|---|---|
 | Privacy policy link | `#privacidad` (es) / `#privacy` (en) | a real page — these anchors currently resolve to nothing |
-| `canonical`, `hreflang`, `og:url`, `og:image` | `https://nexohunters.com/…` | **these currently point at a domain that is not the live one.** Either attach `nexohunters.com` to the Vercel project, or change them to the `.vercel.app` host — until then, search engines and link previews are pointed at the wrong place |
+| Production domain | `nexohunters.com` — **decided**, not yet connected | attach it to the Vercel project (see below). The tags already point here, so **nothing in the code needs to change** once DNS is live |
 | "Agendar una reunión" / "Book a meeting" | `mailto:info@nexohunters.com` | a scheduling link, if one exists |
+
+### Connecting nexohunters.com
+
+`nexohunters.com` is the intended production domain. It currently resolves (behind Cloudflare)
+and serves a *different* site, so until it is pointed here:
+
+- `og:image` 404s → **link previews on WhatsApp/LinkedIn show no image**;
+- `canonical` tells Google to index `nexohunters.com` rather than this deployment.
+
+Neither matters much while the site is not being shared. To switch over: add the domain in
+Vercel under the project's Settings → Domains, then point the DNS in Cloudflare at Vercel.
+Two Cloudflare-specific gotchas: set SSL/TLS mode to **Full (strict)** (Flexible causes a
+redirect loop), and if you use the orange-cloud proxy, make sure the record Vercel asks for
+is created exactly as given. No code changes are needed — the tags already name this domain.
 
 Contact details in use: **info@nexohunters.com** and WhatsApp **+54 9 11 3209 6054**
 (`wa.me/5491132096054`). There is no LinkedIn link — the one in the original design was
