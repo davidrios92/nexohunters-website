@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nexo Hunters — Recruiting process automation</title>
+<meta name="description" content="We automate recruiting processes to fit your team. We reduce day-to-day manual work and improve the experience for candidates and Talent Acquisition teams.">
+<meta name="theme-color" content="#2f363d">
+<link rel="icon" href="../assets/img/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/img/nexo-mark-white.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nexo Hunters — Recruiting process automation">
+<meta property="og:description" content="Diagnosis, design and implementation of automations on the tools your team already uses.">
+<meta property="og:url" content="https://nexohunters.com/en/">
+<meta property="og:image" content="https://nexohunters.com/assets/img/nexo-logo-card.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_LA">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://nexohunters.com/en/">
+<link rel="alternate" hreflang="es" href="https://nexohunters.com/">
+<link rel="alternate" hreflang="en" href="https://nexohunters.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://nexohunters.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+
+<script>
+/* Language routing. Runs before paint so there is no flash of the wrong language.
+   A stored choice always wins over the browser's language. */
+(function () {
+  var KEY = "nx-lang", THIS = "en", OTHER = "../";
+  // Remember an explicit choice before the click navigates away.
+  document.addEventListener("click", function (e) {
+    var el = e.target && e.target.closest && e.target.closest("[data-lang]");
+    if (el) { try { localStorage.setItem(KEY, el.getAttribute("data-lang")); } catch (err) {} }
+  }, true);
+  try {
+    var stored = localStorage.getItem(KEY);
+    if (stored) { if (stored !== THIS) location.replace(OTHER); return; }
+  } catch (err) { return; }
+  var tag = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+  if (/^es\b/i.test(tag)) location.replace(OTHER);
+})();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="#" aria-label="Nexo Hunters — home">
+      <img class="site-header__logo" src="../assets/img/nexo-logo-white-trim.png" alt="Nexo Hunters" width="389" height="63">
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+            data-label-open="Open menu" data-label-close="Close menu">
+      <span class="visually-hidden">Open menu</span>
+      <svg class="nav-toggle__open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+      <svg class="nav-toggle__close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a class="site-nav__link" href="#what-we-automate">What we automate</a>
+      <a class="site-nav__link" href="#how-we-work">How we work</a>
+      <a class="site-nav__link" href="#who-its-for">Who it's for</a>
+      <a class="site-nav__cta" href="#contact">Book a meeting</a>
+      <p class="lang-switch" aria-label="Language">
+        <a class="lang-switch__opt" href="../" hreflang="es" lang="es" data-lang="es">ES</a>
+        <span class="lang-switch__opt is-active" aria-current="true">EN</span>
+      </p>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== Hero ===================== -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div>
+        <p class="hero__eyebrow">Recruiting process automation</p>
+        <h1 class="hero__title">We automate your recruiting processes, tailored to your team</h1>
+        <p class="hero__lead">We reduce day-to-day manual work and improve the experience for both candidates and Talent Acquisition teams.</p>
+        <div class="btn-row">
+          <a class="btn btn--solid" href="#contact">Tell us what you want to automate</a>
+          <a class="btn btn--ghost" href="#contact">Book a meeting</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="diagram" role="img" aria-label="Diagram: the Nexo Hunters core connected to ATS, CRM, Slack, Teams, Google Workspace and Microsoft 365.">
+          <div class="diagram__grid" aria-hidden="true"></div>
+          <svg class="diagram__svg" viewBox="0 0 564 410" fill="none" aria-hidden="true">
+            <path class="diagram__wire" d="M 270 205 V 105 Q 270 90 255 90 H 110"/>
+            <path class="diagram__wire" d="M 294 205 V 85 Q 294 70 309 70 H 368"/>
+            <path class="diagram__wire" d="M 250 205 H 150"/>
+            <path class="diagram__wire" d="M 314 205 H 452"/>
+            <path class="diagram__wire" d="M 282 225 V 355 Q 282 372 265 372 H 200"/>
+            <path class="diagram__wire" d="M 314 215 V 300 Q 314 315 329 315 H 436"/>
+
+            <path class="diagram__pulse" style="animation-delay:0s"    d="M 270 205 V 105 Q 270 90 255 90 H 110"/>
+            <path class="diagram__pulse" style="animation-delay:.55s"  d="M 294 205 V 85 Q 294 70 309 70 H 368"/>
+            <path class="diagram__pulse" style="animation-delay:1.1s"  d="M 250 205 H 150"/>
+            <path class="diagram__pulse" style="animation-delay:1.65s" d="M 314 205 H 452"/>
+            <path class="diagram__pulse" style="animation-delay:2.2s"  d="M 282 225 V 355 Q 282 372 265 372 H 200"/>
+            <path class="diagram__pulse" style="animation-delay:2.75s" d="M 314 215 V 300 Q 314 315 329 315 H 436"/>
+          </svg>
+
+          <span class="diagram__chip" style="left:19.50%; top:21.95%;">ATS</span>
+          <span class="diagram__chip" style="left:65.25%; top:17.07%;">CRM</span>
+          <span class="diagram__chip" style="left:26.60%; top:50.00%;">Slack</span>
+          <span class="diagram__chip" style="left:80.14%; top:50.00%;">Teams</span>
+          <span class="diagram__chip" style="left:35.46%; top:90.73%;">Google Workspace</span>
+          <span class="diagram__chip" style="left:77.30%; top:76.83%;">Microsoft 365</span>
+
+          <div class="diagram__core">
+            <img src="../assets/img/nexo-mark-white.png" alt="" width="256" height="256">
+            <span class="diagram__ring" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 01 · Problems ===================== -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">01 — Problems we solve</p>
+      <h2 class="section-title section-title--narrow">Where your team's time goes</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+          <div class="card__body">
+            <p class="card__num">01</p>
+            <h3 class="card__label">Repetitive tasks in every search</h3>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18"/><path d="M7 12h10"/><path d="M11 19h2"/></svg></div>
+          <div class="card__body">
+            <p class="card__num">02</p>
+            <h3 class="card__label">Manual profile screening</h3>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h6"/><path d="M14 6h6"/><path d="M4 12h12"/><path d="M4 18h8"/><circle cx="19" cy="16" r="3"/></svg></div>
+          <div class="card__body">
+            <p class="card__num">03</p>
+            <h3 class="card__label">Inconsistent candidate follow-up</h3>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/></svg></div>
+          <div class="card__body">
+            <p class="card__num">04</p>
+            <h3 class="card__label">Interview scheduling</h3>
+          </div>
+        </article>
+      </div>
+
+      <div class="card-grid card-grid--remainder">
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></div>
+          <div class="card__body">
+            <p class="card__num">05</p>
+            <h3 class="card__label">Reports built by hand</h3>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h6"/><path d="M15 12h6"/><rect x="9" y="7" width="6" height="10" rx="1"/></svg></div>
+          <div class="card__body">
+            <p class="card__num">06</p>
+            <h3 class="card__label">Processes disconnected across tools</h3>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+          <div class="card__body">
+            <p class="card__num">07</p>
+            <h3 class="card__label">An out-of-date ATS or CRM</h3>
+          </div>
+        </article>
+      </div>
+
+      <div class="callout">
+        <p>You don't need to change your stack. We design automations around the processes and tools your team already uses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 02 · What we automate ===================== -->
+  <section class="section section--surface" id="what-we-automate">
+    <div class="container">
+      <p class="eyebrow">02 — What we automate</p>
+      <h2 class="section-title">Automations designed around your process</h2>
+
+      <div class="card-grid card-grid--wide">
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18"/><path d="M7 12h10"/><path d="M11 19h2"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Screening</h3>
+            <p class="card__text">Initial filtering of applications against the criteria your team defines.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="1"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Interview scheduling</h3>
+            <p class="card__text">Calendars, reminders and reschedules without the email chains.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h6"/><path d="M14 6h6"/><path d="M4 12h12"/><path d="M4 18h8"/><circle cx="19" cy="16" r="3"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Follow-up</h3>
+            <p class="card__text">Consistent follow-up at every stage, with clear owners and deadlines.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Shortlist generation</h3>
+            <p class="card__text">An ordered, comparable shortlist ready for your team's decision.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Reporting</h3>
+            <p class="card__text">Search status reports generated automatically.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="5" rx="1"/><rect x="3" y="14" width="8" height="7" rx="1"/><rect x="13" y="11" width="8" height="10" rx="1"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Dashboards</h3>
+            <p class="card__text">A single view of the pipeline, updated from your process data.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Candidate communication</h3>
+            <p class="card__text">Timely replies and updates, in your organization's tone of voice.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.1a3 3 0 0 1 0 5.8"/><path d="M18 20a6 6 0 0 0-2-4.5"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Referral programs</h3>
+            <p class="card__text">Submission, tracking and traceability for internal referrals.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">AI-assisted sourcing</h3>
+            <p class="card__text">On the sources your team already works with. We don't scrape LinkedIn.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M14 3v4h4"/><path d="M9 14l2 2 4-4"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title">Documentation review and consistency</h3>
+            <p class="card__text">Checking that process documentation is complete and consistent across systems.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 03 · How we work ===================== -->
+  <section class="section process" id="how-we-work">
+    <div class="container">
+      <p class="eyebrow">03 — How we work</p>
+      <h2 class="section-title">Diagnosis, design and implementation</h2>
+
+      <div class="process__stack">
+
+        <!-- Step 01 -->
+        <article class="step step--1">
+          <div class="step__head">
+            <h3 class="step__title">Diagnosis</h3>
+            <svg class="step__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 L7 17"/><path d="M7 8 V17 H16"/></svg>
+          </div>
+          <div class="step__grid">
+            <div>
+              <p class="step__kicker">STEP 01</p>
+              <p class="step__lead">Understand the process before changing it</p>
+              <p class="step__text">We survey the current process, the tools in use and where manual work piles up. We work with the TA team to map every stage exactly as it happens today.</p>
+            </div>
+            <div class="panel" aria-hidden="true">
+              <div class="panel__tabs">
+                <span class="panel__tab panel__tab--active">Assessment</span>
+                <span class="panel__tab">Tools</span>
+                <span class="panel__tab">Stages</span>
+                <span class="panel__tab">Time</span>
+              </div>
+              <div class="panel__row">
+                <div class="panel__row-main">
+                  <div class="panel__row-title">Posting and distribution</div>
+                  <div class="panel__row-sub">4 channels, manual entry</div>
+                </div>
+                <span class="pill">~3 h / search</span>
+                <span class="tag">Manual</span>
+              </div>
+              <div class="panel__row">
+                <div class="panel__row-main">
+                  <div class="panel__row-title">Initial screening</div>
+                  <div class="panel__row-sub">CV review in a spreadsheet</div>
+                </div>
+                <span class="pill">~6 h / search</span>
+                <span class="tag">Manual</span>
+              </div>
+              <div class="panel__row">
+                <div class="panel__row-main">
+                  <div class="panel__row-title">Scheduling</div>
+                  <div class="panel__row-sub">Back-and-forth emails</div>
+                </div>
+                <span class="pill">~4 h / search</span>
+                <span class="tag">Manual</span>
+              </div>
+              <div class="panel__row">
+                <div class="panel__row-main">
+                  <div class="panel__row-title">Weekly report</div>
+                  <div class="panel__row-sub">Built by hand</div>
+                </div>
+                <span class="pill">~2 h / week</span>
+                <span class="tag">Manual</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 02 -->
+        <article class="step step--2">
+          <div class="step__head">
+            <h3 class="step__title">Identifying opportunities</h3>
+            <svg class="step__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 L7 17"/><path d="M7 8 V17 H16"/></svg>
+          </div>
+          <div class="step__grid">
+            <div>
+              <p class="step__kicker">STEP 02</p>
+              <p class="step__lead">Prioritize what is worth automating</p>
+              <p class="step__text">We rank the opportunities by impact and effort. Together with your team we decide what gets automated first, what waits, and what is better left as it is.</p>
+            </div>
+            <div class="panel" aria-hidden="true">
+              <div class="panel__tabs">
+                <span class="panel__tab panel__tab--active">Opportunities</span>
+                <span class="panel__tab">Impact</span>
+                <span class="panel__tab">Effort</span>
+              </div>
+              <div class="meter">
+                <div class="meter__head"><span>Initial screening</span><span class="meter__value">88%</span></div>
+                <div class="meter__track"><div class="meter__fill" style="width:88%"></div></div>
+              </div>
+              <div class="meter">
+                <div class="meter__head"><span>Interview scheduling</span><span class="meter__value">74%</span></div>
+                <div class="meter__track"><div class="meter__fill" style="width:74%"></div></div>
+              </div>
+              <div class="meter">
+                <div class="meter__head"><span>Reporting</span><span class="meter__value">61%</span></div>
+                <div class="meter__track"><div class="meter__fill meter__fill--mid" style="width:61%"></div></div>
+              </div>
+              <div class="meter">
+                <div class="meter__head"><span>Referral program</span><span class="meter__value">38%</span></div>
+                <div class="meter__track"><div class="meter__fill meter__fill--low" style="width:38%"></div></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 03 -->
+        <article class="step step--3">
+          <div class="step__head">
+            <h3 class="step__title">Solution design</h3>
+            <svg class="step__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 L7 17"/><path d="M7 8 V17 H16"/></svg>
+          </div>
+          <div class="step__grid">
+            <div>
+              <p class="step__kicker">STEP 03</p>
+              <p class="step__lead">Clear rules and control points</p>
+              <p class="step__text">We define the flow, the criteria and the moments where a person reviews or approves. The solution is designed around your real process, not a generic model.</p>
+            </div>
+            <div class="panel" aria-hidden="true">
+              <div class="panel__tabs">
+                <span class="panel__tab panel__tab--active">Proposed flow</span>
+                <span class="panel__tab">Rules</span>
+                <span class="panel__tab">Control points</span>
+              </div>
+              <div class="flow">
+                <span class="flow__node">Application</span>
+                <span class="flow__link"></span>
+                <span class="flow__node flow__node--active">Screening</span>
+                <span class="flow__link"></span>
+                <span class="flow__node">Shortlist</span>
+              </div>
+              <div class="panel__row">
+                <div class="panel__row-main">
+                  <div class="panel__row-title">Rule 01</div>
+                  <div class="panel__row-sub">Criteria defined with your team</div>
+                </div>
+                <span class="pill">Automatic</span>
+              </div>
+              <div class="panel__row">
+                <div class="panel__row-main">
+                  <div class="panel__row-title">Human control</div>
+                  <div class="panel__row-sub">Review before moving forward</div>
+                </div>
+                <span class="pill">Manual</span>
+                <span class="tag">TA approves</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 04 -->
+        <article class="step step--4">
+          <div class="step__head">
+            <h3 class="step__title">Implementation</h3>
+            <svg class="step__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 L7 17"/><path d="M7 8 V17 H16"/></svg>
+          </div>
+          <div class="step__grid">
+            <div>
+              <p class="step__kicker">STEP 04</p>
+              <p class="step__lead">On the tools you already use</p>
+              <p class="step__text">We connect your ATS, your CRM and the team's communication tools, put the flow into production and support the rollout.</p>
+            </div>
+            <div class="panel" aria-hidden="true">
+              <div class="panel__tabs">
+                <span class="panel__tab panel__tab--active">Implementation</span>
+                <span class="panel__tab">Connections</span>
+                <span class="panel__tab">Status</span>
+              </div>
+              <div class="panel__row">
+                <div class="panel__row-main">
+                  <div class="panel__row-title">ATS</div>
+                  <div class="panel__row-sub">Candidate sync</div>
+                </div>
+                <span class="pill">Connected</span>
+                <span class="tag">Live</span>
+              </div>
+              <div class="panel__row">
+                <div class="panel__row-main">
+                  <div class="panel__row-title">Google Workspace</div>
+                  <div class="panel__row-sub">Calendar and notifications</div>
+                </div>
+                <span class="pill">Connected</span>
+                <span class="tag">Live</span>
+              </div>
+              <div class="panel__row">
+                <div class="panel__row-main">
+                  <div class="panel__row-title">Slack</div>
+                  <div class="panel__row-sub">Team alerts</div>
+                </div>
+                <span class="pill">Connected</span>
+                <span class="tag">Live</span>
+              </div>
+              <div class="panel__row">
+                <div class="panel__row-main">
+                  <div class="panel__row-title">CRM</div>
+                  <div class="panel__row-sub">Talent pool</div>
+                </div>
+                <span class="pill">In testing</span>
+                <span class="tag">Pilot</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 05 -->
+        <article class="step step--5">
+          <div class="step__head">
+            <h3 class="step__title">Optimization</h3>
+            <svg class="step__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 L7 17"/><path d="M7 8 V17 H16"/></svg>
+          </div>
+          <div class="step__grid">
+            <div>
+              <p class="step__kicker">STEP 05</p>
+              <p class="step__lead">Tune it with the process running</p>
+              <p class="step__text">We measure how it performs, adjust criteria and add improvements incrementally. The process keeps evolving alongside your team.</p>
+            </div>
+            <div class="panel" aria-hidden="true">
+              <div class="panel__tabs">
+                <span class="panel__tab panel__tab--active">Optimization</span>
+                <span class="panel__tab">Current cycle</span>
+              </div>
+              <div class="check"><span class="check__dot"></span>Flow in production</div>
+              <div class="check"><span class="check__dot"></span>Screening criteria tuning</div>
+              <div class="check"><span class="check__dot"></span>New reports per search</div>
+              <div class="check check--todo"><span class="check__dot"></span>Next iteration: referrals</div>
+              <div class="panel__note">Monthly review with the TA team.</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 04 · Integrations ===================== -->
+  <section class="section section--surface section--tight">
+    <div class="split">
+      <div>
+        <p class="eyebrow">04 — Integrations</p>
+        <h2 class="split__title">We work with the tools your team already uses</h2>
+      </div>
+      <ul class="tool-grid">
+        <li class="tool-grid__item">ATS</li>
+        <li class="tool-grid__item">CRM</li>
+        <li class="tool-grid__item">Google Workspace</li>
+        <li class="tool-grid__item">Microsoft 365</li>
+        <li class="tool-grid__item">Slack</li>
+        <li class="tool-grid__item">Teams</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== 05 · Automation + human ===================== -->
+  <section class="band">
+    <div class="band__inner">
+      <div>
+        <p class="eyebrow eyebrow--light">05 — Automation + human judgment</p>
+        <h2 class="band__title">Technology handles the repetitive work</h2>
+        <p class="band__text">Critical decisions stay with your recruiting team. Every automation is designed with control points where a person reviews, approves or steps in.</p>
+      </div>
+      <div class="duo">
+        <div class="duo__col">
+          <p class="duo__head">AUTOMATED</p>
+          <ul class="duo__list">
+            <li>Data entry and clean-up</li>
+            <li>Reminders and alerts</li>
+            <li>Scheduling and reschedules</li>
+            <li>Status reports</li>
+          </ul>
+        </div>
+        <div class="duo__col">
+          <p class="duo__head duo__head--muted">THE TEAM DECIDES</p>
+          <ul class="duo__list">
+            <li>Evaluation criteria</li>
+            <li>Moving candidates forward</li>
+            <li>The final shortlist</li>
+            <li>Offer and close</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 06 · Who it's for ===================== -->
+  <section class="section" id="who-its-for">
+    <div class="container">
+      <p class="eyebrow">06 — Who it's for</p>
+      <h2 class="section-title">Teams with processes already up and running</h2>
+
+      <div class="card-grid card-grid--half">
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.1a3 3 0 0 1 0 5.8"/><path d="M18 20a6 6 0 0 0-2-4.5"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title card__title--gap">In-house TA teams</h3>
+            <p class="card__text card__text--sm">Running several searches in parallel with limited resources.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2"/><path d="M3 13h18"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title card__title--gap">Recruiting agencies</h3>
+            <p class="card__text card__text--sm">That need to standardize how they operate across clients and teams.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20L20 4"/><path d="M14 4h6v6"/><path d="M4 14v6h6"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title card__title--gap">Growing startups</h3>
+            <p class="card__text card__text--sm">Building out their process and looking to avoid operational debt.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M9 20V5"/><path d="M14 20v-8"/><path d="M19 20V8"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title card__title--gap">High-volume hiring</h3>
+            <p class="card__text card__text--sm">Where every manual task is multiplied by hundreds of candidates.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 07 · Results ===================== -->
+  <section class="section section--surface">
+    <div class="container">
+      <p class="eyebrow">07 — The results we aim for</p>
+
+      <div class="card-grid card-grid--half">
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h10"/><path d="M4 19h6"/><circle cx="19" cy="12" r="2"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title card__title--lg">Less manual work</h3>
+            <p class="card__text card__text--sm">The team spends its time evaluating and talking to people, not copying data.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title card__title--lg">More traceability</h3>
+            <p class="card__text card__text--sm">Every stage is recorded, so you can tell where everything stands.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.6-7-9.5A3.9 3.9 0 0 1 12 7a3.9 3.9 0 0 1 7 3.5C19 15.4 12 20 12 20z"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title card__title--lg">A better candidate experience</h3>
+            <p class="card__text card__text--sm">Timely replies and consistent communication throughout the process.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card__frame" aria-hidden="true"></span>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v7"/><path d="M12 15v7"/><path d="M2 12h7"/><path d="M15 12h7"/></svg></div>
+          <div class="card__body">
+            <h3 class="card__title card__title--lg">Centralized information</h3>
+            <p class="card__text card__text--sm">One point of reference instead of data scattered across spreadsheets.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 08 · About ===================== -->
+  <section class="section">
+    <div class="about">
+      <div>
+        <p class="eyebrow">08 — About Nexo Hunters</p>
+        <img class="about__logo" src="../assets/img/nexo-logo-card.png" alt="Nexo Hunters" width="731" height="477" loading="lazy" decoding="async">
+      </div>
+      <p class="about__text">Nexo Hunters is a recruiting process automation consultancy for Talent Acquisition teams in Latin America. We work through diagnosis, design and implementation of tailored solutions on the tools each organization already uses. We don't sell a closed product: we start from each team's real process and automate what actually makes sense to automate.</p>
+    </div>
+  </section>
+
+  <!-- ===================== Contact ===================== -->
+  <section class="cta" id="contact">
+    <div class="cta__inner">
+      <h2 class="cta__title">Is there a part of your process you would like to automate?</h2>
+      <div class="btn-row btn-row--center">
+        <a class="btn btn--solid btn--lg" href="https://wa.me/5491132096054" target="_blank" rel="noopener">
+          <span class="btn__dot" aria-hidden="true"></span>Message us on WhatsApp
+        </a>
+        <a class="btn btn--ghost btn--lg" href="mailto:info@nexohunters.com?subject=Book%20a%20meeting">Book a meeting</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <img class="site-footer__logo" src="../assets/img/nexo-logo-white-trim.png" alt="Nexo Hunters" width="389" height="63">
+    <div class="site-footer__links">
+      <a class="site-footer__link" href="mailto:info@nexohunters.com">info@nexohunters.com</a>
+      <a class="site-footer__wa" href="https://wa.me/5491132096054" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="site-footer__link" href="#privacy">Privacy policy</a>
+    </div>
+  </div>
+  <div class="site-footer__legal">© 2026 Nexo Hunters</div>
+</footer>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
