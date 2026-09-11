@@ -13,3 +13,7 @@ Desktop.ini
 node_modules/
 .cache/
 __pycache__/
+
+# scratch
+_b64.json
+_opt/

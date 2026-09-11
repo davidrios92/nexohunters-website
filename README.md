@@ -86,7 +86,7 @@ or document-level behavior. This implementation adds:
 
 ## Assets
 
-`nexo-logo-card.png` and `nexo-logo-white.png` came from the source logos already in this
+`nexo-logo-card.jpg` and `nexo-logo-white.png` came from the source logos already in this
 folder (`Logo 3.png` and `Logo_transparent (3).png` — byte-identical to the design project's
 copies).
 
