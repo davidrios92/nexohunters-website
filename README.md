@@ -110,7 +110,22 @@ project and drop them into `assets/img/` — no code changes needed.
 |---|---|---|
 | Privacy policy link | `#privacidad` (es) / `#privacy` (en) | a real page — these anchors currently resolve to nothing |
 | Production domain | `nexohunters.com` — **decided**, not yet connected | attach it to the Vercel project (see below). The tags already point here, so **nothing in the code needs to change** once DNS is live |
-| "Agendar una reunión" / "Book a meeting" | `mailto:info@nexohunters.com` | a scheduling link, if one exists |
+
+### Contact CTAs
+
+There is deliberately **no calendar booking** — every path leads to email or WhatsApp. The
+labels were chosen to match what each button actually does, so none of them promises a
+scheduled slot:
+
+| Where | Label (es / en) | Action |
+|---|---|---|
+| Header nav | Contactanos / Get in touch | scrolls to the contact section |
+| Hero, secondary | Hablemos / Let's talk | scrolls to the contact section |
+| Contact section, primary | Escribinos por WhatsApp / Message us on WhatsApp | opens WhatsApp |
+| Contact section, secondary | Escribinos por mail / Email us | `mailto:` with a prefilled subject |
+
+If a scheduling tool (Cal.com, Calendly…) is added later, the two "scrolls to contact"
+buttons are the natural place for it — and *then* "Agendar una reunión" becomes accurate.
 
 ### Connecting nexohunters.com
 
