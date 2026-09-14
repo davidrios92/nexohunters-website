@@ -666,6 +666,46 @@ a.lang-switch__opt:hover {
   text-wrap: pretty;
 }
 
+/* Deck mode — the "fold away to reveal the next step" variant.
+   Added by main.js only on wide viewports when motion is allowed. Without JS,
+   with reduced motion, or on phones, none of this applies and the section keeps
+   the CSS-only sticky stack above. */
+.process__stack.is-deck {
+  display: block;
+  gap: 0;
+  position: relative;
+}
+.process__stack.is-deck .process__pin {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* clear the sticky site header so a centred card never sits under it */
+  padding-top: var(--header-h);
+}
+.process__stack.is-deck .process__deck {
+  position: relative;
+  perspective: 1600px;
+  perspective-origin: 50% 0%;
+}
+.process__stack.is-deck .step {
+  position: absolute;
+  inset: 0 0 auto 0;
+  top: 0;
+  /* sticky offsets and the dark ramp both belong to the stacked variant */
+  background: var(--slate-500);
+  transform-origin: 50% 50%;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+/* Keep a little tonal separation so the deck still reads as layered. */
+.process__stack.is-deck .step--1 { background: var(--slate-100); }
+.process__stack.is-deck .step--2 { background: var(--slate-200); }
+.process__stack.is-deck .step--3 { background: var(--slate-300); }
+.process__stack.is-deck .step--4 { background: var(--slate-400); }
+.process__stack.is-deck .step--5 { background: var(--slate-600); }
+
 /* Mock UI panel ----------------------------------------------------------- */
 .panel {
   background: var(--surface);
