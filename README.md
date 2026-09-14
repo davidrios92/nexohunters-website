@@ -6,6 +6,25 @@ Static, dependency-free implementation of the **Nexo Hunters Landing** Claude De
 Bilingual one-pager for a recruiting-process automation consultancy — Spanish (es-LA) is the
 primary version, English (en) is a full translation.
 
+## Caching
+
+`vercel.json` deliberately splits the cache policy, and the reason matters:
+
+- `/assets/img/*` → 7 days. Images are stable.
+- `/assets/css/*` and `/assets/js/*` → `no-cache`, meaning *revalidate on every load*.
+
+**Why not cache CSS/JS hard:** the filenames carry no content hash (there is no build
+step to add one). With a long `max-age`, a returning visitor keeps the old stylesheet and
+script until it expires — a deploy silently fails to reach them for up to a day. This
+actually happened: a shipped change was invisible in the browser because a 24-hour
+`max-age` was serving a stale `main.js`. `no-cache` still stores the file; with ETags,
+revalidation is an empty 304, not a re-download. If a build step is ever added, switch to
+hashed filenames and cache them immutably.
+
+Note: `vercel.json` header rules accept only `source`, `headers`, `has` and `missing`.
+Adding anything else (a `comment` key, for instance) fails the deploy at config validation
+with no build logs at all.
+
 ## Live
 
 - Spanish: <https://nexohunters-website.vercel.app/>
