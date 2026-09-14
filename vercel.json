@@ -3,9 +3,17 @@
   "trailingSlash": true,
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "comment": "Images are stable; cache them hard.",
+      "source": "/assets/img/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
+        { "key": "Cache-Control", "value": "public, max-age=604800, must-revalidate" }
+      ]
+    },
+    {
+      "comment": "CSS and JS have no content hash in their filenames, so they must revalidate on every load or a deploy takes up to a day to reach returning visitors. ETags make this a cheap 304, not a re-download.",
+      "source": "/assets/(css|js)/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, no-cache" }
       ]
     }
   ]
